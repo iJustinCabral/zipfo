@@ -11,6 +11,12 @@
 		E310860B295C88FA002D2E10 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E310860A295C88FA002D2E10 /* ContentView.swift */; };
 		E310860D295C88FB002D2E10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E310860C295C88FB002D2E10 /* Assets.xcassets */; };
 		E3108610295C88FB002D2E10 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E310860F295C88FB002D2E10 /* Preview Assets.xcassets */; };
+		E3108617295C89FC002D2E10 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3108616295C89FC002D2E10 /* APIConstants.swift */; };
+		E310861A295C8AB6002D2E10 /* ZipInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3108619295C8AB6002D2E10 /* ZipInformation.swift */; };
+		E3108620295D06FE002D2E10 /* ZipfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E310861F295D06FE002D2E10 /* ZipfoService.swift */; };
+		E3108622295D086C002D2E10 /* ZipfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3108621295D086C002D2E10 /* ZipfoViewModel.swift */; };
+		E3108624295D35B2002D2E10 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3108623295D35B2002D2E10 /* DetailView.swift */; };
+		E3108626295D3A25002D2E10 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3108625295D3A25002D2E10 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		E310860A295C88FA002D2E10 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E310860C295C88FB002D2E10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E310860F295C88FB002D2E10 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E3108616295C89FC002D2E10 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		E3108619295C8AB6002D2E10 /* ZipInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipInformation.swift; sourceTree = "<group>"; };
+		E310861F295D06FE002D2E10 /* ZipfoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipfoService.swift; sourceTree = "<group>"; };
+		E3108621295D086C002D2E10 /* ZipfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipfoViewModel.swift; sourceTree = "<group>"; };
+		E3108623295D35B2002D2E10 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		E3108625295D3A25002D2E10 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +63,14 @@
 		E3108607295C88FA002D2E10 /* Zipfo */ = {
 			isa = PBXGroup;
 			children = (
+				E310861C295C95D4002D2E10 /* Base */,
+				E310861B295C95BA002D2E10 /* ViewModel */,
+				E3108618295C8A99002D2E10 /* Model */,
 				E3108608295C88FA002D2E10 /* ZipfoApp.swift */,
+				E310861F295D06FE002D2E10 /* ZipfoService.swift */,
 				E310860A295C88FA002D2E10 /* ContentView.swift */,
+				E3108623295D35B2002D2E10 /* DetailView.swift */,
+				E3108625295D3A25002D2E10 /* MapView.swift */,
 				E310860C295C88FB002D2E10 /* Assets.xcassets */,
 				E310860E295C88FB002D2E10 /* Preview Content */,
 			);
@@ -65,6 +83,46 @@
 				E310860F295C88FB002D2E10 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E3108618295C8A99002D2E10 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E3108619295C8AB6002D2E10 /* ZipInformation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E310861B295C95BA002D2E10 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E3108621295D086C002D2E10 /* ZipfoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E310861C295C95D4002D2E10 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E310861E295D05E0002D2E10 /* Views */,
+				E310861D295C95E3002D2E10 /* Constants */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		E310861D295C95E3002D2E10 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				E3108616295C89FC002D2E10 /* APIConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		E310861E295D05E0002D2E10 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +195,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E310861A295C8AB6002D2E10 /* ZipInformation.swift in Sources */,
+				E3108626295D3A25002D2E10 /* MapView.swift in Sources */,
+				E3108622295D086C002D2E10 /* ZipfoViewModel.swift in Sources */,
+				E3108620295D06FE002D2E10 /* ZipfoService.swift in Sources */,
+				E3108624295D35B2002D2E10 /* DetailView.swift in Sources */,
 				E310860B295C88FA002D2E10 /* ContentView.swift in Sources */,
 				E3108609295C88FA002D2E10 /* ZipfoApp.swift in Sources */,
+				E3108617295C89FC002D2E10 /* APIConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
